@@ -1,0 +1,10 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    backface-visibility: unset;
+    font-size: larger
+}
+title {
+    color: springgreen;
+    font-size: larger
+}

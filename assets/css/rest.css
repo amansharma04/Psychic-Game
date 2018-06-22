@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 14px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777; 
+    background-image: url("../images/squared_metal.png");
+    background-repeat: repeat;
+}
+
+/* learning never exhausts the mind, Da Vinci */
+
+h1, h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5; 
+	padding-bottom: 20px;
+	border-bottom: 2px solid #dddddd;
+}
+
+h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 18px;
+    color: #4aaaa5; 
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;    
+}
+
+h1 {
+	font-size: 25px; 
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #dddddd; 
+}
+
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+li {
+	float: left;
+    border-right: .5px solid #F5F5F5;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover:not(.header-right) {
+    background-color: #D3D3D3;
+}
+
+li a.header-right {
+    color: white;
+    background-color: #4aaaa5; 
+}
+
+/* order layout top right bottom left */
+
+.header {
+    right: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+.header-right {
+    background-color: white;
+}
+
+.header-left {
+    margin-left: 50px;
+    font-family:'Georgia', Times, serif;
+    font-size: 25px; 
+    color: white; 
+    background-color: #4aaaa5;
+}
+
+.header-left li a {
+    font-size: 25px; 
+    color: white; 
+    background-color: #4aaaa5;
+}
+
+.container {
+    width: 980px;
+    height: 800px;
+    padding-top: 30px;
+    /*position: relative; */
+}
+
+/* tried 1 million times multiple
+variations of: display (block/inline), 
+position (abs/rel/stat) 
+float(left/none/right) learning which
+elements do what and when */
+
+/* CSS for index.html */
+
+.mainbody {
+    margin-top: 75px;
+    width: 400px;
+    height: 600px;
+    display: inline-block;
+    padding: 10px 25px 25px 25px;
+    background-color: #ffffff;
+    color: #777777;
+}
+
+.mainbody img {
+    padding-bottom: 20px; 
+    clear: none;
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+.mainbody p {
+    line-height: 18px;
+}
+
+.sidebar {
+    margin-top: 75px;
+    float: right;  
+    display: inline-block;
+    margin-right: 260px;
+    background-color: #ffffff;
+	text-align: center;
+}
+
+/* CSS for contact.html */
+
+/* many attempts to change margin-bottom but, nothing works*/
+
+.formbody {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    width: 400px;
+    height: 740px;
+    display: inline-block;
+    padding: 10px 25px 25px 25px;
+    background-color: #ffffff;
+    color: #777777;
+ }
+
+label {
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #A9A9A9;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=send] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=send]:hover {
+    background-color: #D3D3D3;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    background: transparent;
+    color: #4aaaa5;
+    opacity: 0.7;
+}
+
+/* CSS for portfolio.html */
+
+/* many attempts to change margin-bottom but, nothing works*/
+
+.portfoliobody {
+    margin-top: 75px;
+    width: 400px;
+    height: auto;
+    margin-bottom: 75px; 
+    display: inline-block;
+    padding: 10px 25px 25px 25px;
+    background-color: #ffffff;
+    color: #777777;
+}
+
+.section1, .section2 {
+    position: relative;
+    display: inline-block;
+    margin: 25px;
+} 
+
+.section3, .section4 {
+    position: relative;
+    display: inline-block;
+    margin: 25px;
+} 
+
+.p1, .p2 {
+    position: absolute;
+    height: auto;
+    width: auto;
+    margin: auto;
+    left: 20px;
+}
+
+.p3, .p4 {
+    position: absolute;
+    height: auto;
+    width: auto;
+    margin: auto;
+    left: 20px;
+}
+
+.p1, .p2, .p3, .p4 span {
+    position: absolute;
+    top: 115px;
+    right: auto;
+    left: 32px;
+    margin: auto;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 18px;
+    color: #777777;
+    font-weight: bold;
+    background-color: #DCDCDC;
+}
+
+/* CSS for footer */
+
+#footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    text-align: center;
+	border-top: 3px solid #4aaaa5;
+	background: #666666;
+}
+
+/*  added media queries to end of file 
+    per homework2 document spec */
+
+/* 980px because desktop layout is 960px */
+
+@media screen and (max-width: 980px) {
+
+
+.mainbody {
+    margin-top: 75px;
+    width: 400px;
+    height: 560px;
+    display: inline-block;
+    padding: 10px 25px 25px 25px;
+    background-color: #ffffff;
+    color: #777777;
+}
+
+.mainbody img {
+    padding-bottom: 20px; 
+    clear: none;
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+.sidebar {
+    margin-top: 75px;
+    float: right;  
+    display: inline-block;
+    margin-right: 260px;
+    background-color: #ffffff;
+    text-align: center;
+    }
+}
+
+.formbody {
+    margin-top: 75px;
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    padding: 10px 25px 25px 25px;
+    background-color: #ffffff;
+    color: #777777;
+ }
+
+.portfoliobody {
+    margin-top: 75px;
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    padding: 10px 25px 25px 25px;
+    background-color: #ffffff;
+    color: #777777;
+ }
+
+ /* added screen sizes*/
+ 
+ /* width @ 768px because tablet layout */
+
+@media screen and (max-width: 768px) {
+
+.mainbody {
+    width: 65%;
+    height: 440px;
+    display: block; 
+}
+
+.mainbody img {
+    padding-bottom: 10px; 
+    padding-top: 15px;
+    margin-right: 20px;
+}
+  
+/* issue with sidebar not sized margin top closer
+to portfoliobody nor formbody */ 
+
+.portfoliobody {
+    width: 65%;
+    height: 500px;
+    display: block; 
+}
+
+/* issue with sidebar not sized margin top closer
+to portfoliobody nor formbody */ 
+
+.formbody {
+    width: 65%;
+    height: auto;
+    display: block; 
+}
+
+.sidebar {
+    width: 65%;
+    float: none;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 0px;
+}
+
+.sidebar li a {
+    margin: 0;
+    padding-top: 0px;
+}
+
+.sidebar-header h3 {
+    float: left;
+    padding-left: 20px; 
+    border-bottom: 1px solid #e7e7e7; 
+    }  
+}    
+
+ /* width @ 640px because phone layout landscape */
+ 
+@media screen and (max-width: 640px) {
+
+.mainbody {
+    width: 55%;
+    margin-top: 125px;
+    height: auto;
+}
+
+.mainbody img {
+    width: 100%;
+    padding-bottom: 20px; 
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+.formbody {
+    width: 55%;
+    margin-top: 125px;
+    height: auto;
+}
+
+.portfoliobody {
+    width: 55%;
+    margin-top: 125px;
+    height: auto;
+}
+
+.sidebar {
+    width: 55%;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-bottom: 150px; 
+}
+
+.sidebar li a {
+    padding-top: 0px;
+}
+
+.sidebar-header h3 {
+    float: left;
+    padding-left: 20px; 
+    border-bottom: 1px solid #e7e7e7;
+}  
+
+.header-right {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-left: -29%;
+    position: static;
+}
+
+/*. this does not seem to be working
+.header-left li a {
+    background-color: #4aaaa5;
+    width: 100%;
+    margin: auto;
+}  
+*/  
+
+.header-left {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-right: -35%;
+    }
+}
